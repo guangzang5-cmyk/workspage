@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>数字套利 • 登录</title>
+  <meta name="description"
+    content="Login to access the dashboard of 数字套利 Subscribe https://youtube.com/@am_clubs?sub_confirmation=1 for updates.">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #5563de, #89f7fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 35px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 380px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      background-color: #5563de;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #3344cc;
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .link-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .link-row a {
+      flex: 1;
+      margin: 0 5px;
+      padding: 6px 0;
+      color: #5563DE;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 6px;
+      background: #f1f3ff;
+      transition: all 0.3s;
+    }
+
+    .link-row a:hover {
+      background: #e0e4ff;
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(135deg, #1e1e2f, #30324a);
+        color: #f0f0f0;
+      }
+
+      .login-container {
+        background: #2b2b3c;
+        color: #eee;
+      }
+
+      input[type="password"] {
+        background: #3a3a4d;
+        color: #fff;
+        border-color: #555;
+      }
+
+      button {
+        background-color: #6b74e6;
+      }
+
+      .link-row a {
+        background: #3a3a4d;
+        color: #9db4ff;
+      }
+
+      .link-row a:hover {
+        background: #4b4b6a;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>🔐 请输入密码登录</h1>
+    <form method="POST" action="/login">
+      <input type="password" name="password" placeholder="输入访问密码" required>
+      <button type="submit">登录</button>
+    </form>
+
+    <div class="links">
+      <div class="link-row">
+        <a href="https://youtube.com/@am_clubs?sub_confirmation=1" target="_blank">🎬 YouTube</a>
+        <a href="https://t.me/am_clubs" target="_blank">💬 Telegram</a>
+      </div>
+      <div class="link-row">
+        <a href="https://github.com/am-cf-tunnel" target="_blank">📂 GitHub</a>
+        <a href="https://amclubss.com" target="_blank">🌐 Blog</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
